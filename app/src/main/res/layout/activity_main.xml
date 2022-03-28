@@ -8,13 +8,25 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/welcome_message"
+        android:id="@+id/tv_fullname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_marginTop="16dp"
         android:layout_marginLeft="16dp"
-        android:text="TextView" />
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_fullname"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/btn_logout"
@@ -24,4 +36,28 @@
         android:layout_marginTop="16dp"
         android:layout_marginRight="16dp"
         android:text="Logout" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/verifyMsg"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/tv_email"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:layout_marginLeft="16dp"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:text="Email Not Verified"-->
+<!--        android:textColor="@color/red"-->
+<!--        android:textStyle="bold"-->
+<!--        android:visibility="gone" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/resendCode"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/verifyMsg"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:layout_marginLeft="16dp"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:text="Verify Now"-->
+<!--        android:visibility="gone" />-->
 </RelativeLayout>
